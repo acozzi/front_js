@@ -2,7 +2,7 @@ var pon_frase_en_span = function (data) {
     console.log(data);  // Revisa la estructura del objeto data
     var frase = data['parse'] && data['parse']['text'] && data['parse']['text']['*'];
     if (frase) {
-        frase = frase.replace(/\/wiki\//g, "http://es.wikiquote.org/wiki/");
+        frase = frase.replace(/\/wiki\//g, "https://es.wikiquote.org/wiki/");
         document.getElementById('frase').innerHTML = frase;
     } else {
         console.error('No se encontró la frase en los datos.');
@@ -22,7 +22,7 @@ var get_wikiquote = function () {
     if (day == 5) titulo = 'Plantilla:Frase-viernes';
     if (day == 6) titulo = 'Plantilla:Frase-sábado';
 
-    var url = 'http://es.wikiquote.org/w/api.php?action=parse&text={{' + titulo + '}}&format=json&callback=pon_frase_en_span';
+    var url = 'https://es.wikiquote.org/w/api.php?action=parse&text={{' + titulo + '}}&format=json&callback=pon_frase_en_span';
 
     var elem = document.createElement('script');
     elem.setAttribute('src', url);
