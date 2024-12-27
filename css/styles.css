@@ -109,6 +109,7 @@ main {
   margin-top: 1em;
 }
 
+
 header {
   position: relative;
   padding: 1em 0;
@@ -184,6 +185,7 @@ nav a:first-of-type {
   font-style: normal;
 }
 
+
 .about h2 {
   font-size: 3rem; 
   margin-bottom: 1em; 
@@ -193,8 +195,6 @@ nav a:first-of-type {
   font-size: 2rem; 
   line-height: 1.6;
 }
-
-
 
 footer {
   background-color: #1C1C1C;

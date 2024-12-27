@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-    <body>
+    <body> 
         <header>
             <nav>
               <img src="./assets/logo.png" width="100px" alt="Logo de la empresa" >
@@ -25,9 +25,9 @@
                 </ul>
             </nav>
         </header>
-        <main>
+        <main onload="get_wikiquote();">
             <section class="hero">
-                <h1>Bienvenidos a Ortigas - Quesos de Campo</h1>
+                <h1>Bienvenidos a Ortigas - Quesos de Campo.</h1>
                 <p>Disfruta de nuestros quesos artesanales de la mejor calidad.</p>
                 <a href="./pages/productos.html" class="btn">Ver Productos</a>
             </section>
@@ -67,11 +67,16 @@
                     <a href="./pages/contacto.html" class="btn">Contáctanos</a>
                 </div>
             </section>
+
+            <section class="about">
+                <h2 id="content-phrase">Frase del día</h2>
+                <span id="frase"></span>
+            </section>
+            
         </main>   
         <footer>
             <div class="footer-content">
                 <div class="footer-item">
-                    <span>Facebook</span>
                     <a href="https://www.facebook.com/profile.php?id=100054383476596" target="_blank">
                         <i class="fa-brands fa-facebook-f"></i>
                     </a>
@@ -99,6 +104,8 @@
             <div class="footer-copyright">
                 <p>Copyright Alejandro Cozzi - 2024</p>
             </div>
+            
         </footer>
+        <script src="./js/index.js"></script>
     </body>
 </html>
